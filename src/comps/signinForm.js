@@ -12,6 +12,7 @@ const SigninFormArea = () => {
     const responseGoogle = (response) => {
         console.log(response.profileObj);
         const username = response.profileObj.name;
+        console.log(username);
     }
     return (
         <div className="signinForm" id="signinarea"

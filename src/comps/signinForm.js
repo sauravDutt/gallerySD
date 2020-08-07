@@ -47,15 +47,15 @@ const SigninFormArea = () => {
                     <p>
                         <i 
                             class="fas fa-bell"
-                            style={{cursor:'pointer', fontSize:'20px'}}
+                            style={{cursor:'pointer', fontSize:'20px', color:'#9f70be'}}
                         ></i>
                         <i 
                             class="far fa-comment"
-                            style={{cursor:'pointer', fontSize:'20px'}}
+                            style={{cursor:'pointer', fontSize:'20px', color:'#9f70be', marginLeft:'10px'}}
                         ></i>
                         <i 
                             class="fas fa-cart-plus"
-                            style={{cursor:'pointer', fontSize:'20px'}}
+                            style={{cursor:'pointer', fontSize:'20px', color:'#9f70be', marginLeft:'10px'}}
                         ></i>
                     </p>
                     </span>

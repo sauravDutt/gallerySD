@@ -9,11 +9,18 @@ const SigninFormArea = () => {
         document.getElementById('signinarea').style.display = 'none';
     }
 
+    const removeBtn = () => {
+        document.getElementById('buttonSignin').style.display = 'none';
+    }
+
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
         document.getElementById('initial').style.display = 'none';   
+        if (document.getElementById('userInfo').style.display === 'block') {
+            removeBtn();
+        }
     }
-
+    
     const [name, setName] = useState('');
 
     const responseGoogle = (response) => {
@@ -37,7 +44,8 @@ const SigninFormArea = () => {
                         <h2>Signin with Google</h2>
                         <p>Signin with Google and become a part of the Community!!</p>
                     </span>
-                    <span id="userInfo"
+                    <span 
+                            id="userInfo"
                             style={{display:'none'}}
                         >
                             <br />
@@ -63,6 +71,7 @@ const SigninFormArea = () => {
                         </p>
                     </span>
                     <button
+                        id="buttonSignin"
                         style={{cursor: 'pointer', border: 'none', backgroundColor: 'transparent'}}
                         onClick={welcomeUser}
                     >

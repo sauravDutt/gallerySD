@@ -41,7 +41,7 @@ const SigninFormArea = () => {
                     </span>
                     <span id="userInfo">
                     <h2>{name}</h2>
-                    <hr style={{backgroundColor:'#691e9b', height:'5px'}}/>
+                    <hr style={{backgroundColor:'#9f70be', height:'5px', borderRadius:'20px'}}/>
                     </span>
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}

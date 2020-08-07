@@ -21,8 +21,7 @@ const SigninFormArea = () => {
         setName(response.profileObj.name);
     }
     return (
-        <div className="signinForm" id="signinarea"
-        >
+        <div className="signinForm" id="signinarea">
             <a 
                 href={"#titleTop"}
                 className={"closeBtn"}

@@ -1,6 +1,7 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
 
 
 const SigninFormArea = () => {
@@ -9,8 +10,11 @@ const SigninFormArea = () => {
     const closesigninForm = () => {
         document.getElementById('signinarea').style.display = 'none';
     }
+
+    cosnt [name, setName] = useState('');
+
     const responseGoogle = (response) => {
-        console.log(response.profileObj);
+        setName(response.profileObj.name);
     }
     return (
         <div className="signinForm" id="signinarea"
@@ -28,6 +32,7 @@ const SigninFormArea = () => {
                     <br />
                     <h2>Signin with Google</h2>
                     <p>Signin with Google and become a part of the Community!!</p>
+                    <h2>{name}</h2>
                         <GoogleLogin 
                             clientId={''}
                             buttonText="Signin"
@@ -38,7 +43,7 @@ const SigninFormArea = () => {
                 </div>
             </div>
             {/* <div className='welcomeUser'>
-                <h2>{}</h2>
+                
             </div> */}
         </div>
     )

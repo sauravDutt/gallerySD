@@ -19,8 +19,7 @@ const SigninFormArea = () => {
         <div className="signinForm" id="signinarea"
         >
             <a 
-                href="javascript:void(0)"
-                className="closeBtn"
+                className={"closeBtn"}
                 style={{cursor: 'pointer', float: 'right', fontSize: '25px', color:'#691e9b'}}
                 onClick={closesigninForm}
             >

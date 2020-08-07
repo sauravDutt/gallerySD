@@ -45,14 +45,18 @@ const SigninFormArea = () => {
                     <h2>{name}</h2>
                     <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
                     </span>
+                    <button
+                        style={{cursor: 'pointer'}}
+                        onClick={welcomeUser}
+                    >
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"
                             onSuccess={responseGoogle}
                             onFailure={responseGoogle}
                             cookiePolicy={'single_host_origin'}
-                            onClick = {welcomeUser}
                         />
+                    </button>
                 </div>
             </div>
         </div>

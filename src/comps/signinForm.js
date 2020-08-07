@@ -13,13 +13,6 @@ const SigninFormArea = () => {
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
         document.getElementById('initial').style.display = 'none';
-        document.getElementById('signinGoogleBtn').style.display = 'none';
-        document.getElementById('signoutGoogleBtn').style.display = 'block';
-    }
-
-    const closesignoutBtn = () => {
-        document.getElementById('signoutGoogleBtn').style.display = 'none';
-        document.getElementById('signinGoogleBtn').style.display = 'block';
     }
 
     const [name, setName] = useState('');
@@ -57,18 +50,11 @@ const SigninFormArea = () => {
                         onClick={welcomeUser}
                     >
                         <GoogleLogin 
-                            id={'signinGoogleBtn'}
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"
                             onSuccess={responseGoogle}
                             onFailure={responseGoogle}
                             cookiePolicy={'single_host_origin'}
-                        />
-                        <GoogleLogin 
-                            id={'signoutGoogleBtn'}
-                            style={{display:'none'}}
-                            buttonText="Signout"
-                            onClick = {closesignoutBtn}
                         />
                     </button>
                 </div>

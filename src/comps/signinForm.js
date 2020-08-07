@@ -13,8 +13,6 @@ const SigninFormArea = () => {
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
         document.getElementById('initial').style.display = 'none';
-        document.getElementsByTagName('GoogleLogin').style.display = 'none';
-    }
 
     const [name, setName] = useState('');
 
@@ -57,6 +55,10 @@ const SigninFormArea = () => {
                         <i 
                             class="fas fa-cart-plus"
                             style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
+                        ></i>
+                        <i 
+                            class="fas fa-sign-out-alt"
+                            style={{cursor:'pointer', fontSize:'20px', color:'#715086', float:'right'}}
                         ></i>
                     </p>
                     </span>

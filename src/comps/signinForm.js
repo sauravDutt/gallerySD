@@ -12,8 +12,7 @@ const SigninFormArea = () => {
 
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
-        document.getElementById('initial').style.display = 'none';
-        document.getElementsByTagName('button').innerHTML = '';
+        document.getElementById('initial').style.display = 'none';   
     }
 
     const [name, setName] = useState('');

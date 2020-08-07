@@ -46,7 +46,7 @@ const SigninFormArea = () => {
                     <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
                     </span>
                     <button
-                        style={{cursor: 'pointer'}}
+                        style={{cursor: 'pointer', border: 'none', backgroundColor: 'transparent'}}
                         onClick={welcomeUser}
                     >
                         <GoogleLogin 

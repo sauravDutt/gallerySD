@@ -11,8 +11,8 @@ const SigninFormArea = () => {
     }
 
     const welcomeUser = () => {
-        document.getElementById('welcomeuserId').style.display = 'block';
-        document.getElementById('signinoptionId').style.display = 'none';
+        document.getElementById('userInfo').style.display = 'block';
+        document.getElementById('initial').style.display = 'none';
     }
 
     const [name, setName] = useState('');
@@ -39,7 +39,9 @@ const SigninFormArea = () => {
                     <h2>Signin with Google</h2>
                     <p>Signin with Google and become a part of the Community!!</p>
                     </span>
-                    <span id="userInfo">
+                    <span id="userInfo"
+                        style={{display:'none'}}
+                    >
                     <h2>{name}</h2>
                     <hr style={{backgroundColor:'#9f70be', height:'5px', borderRadius:'20px'}}/>
                     </span>

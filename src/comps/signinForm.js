@@ -44,6 +44,20 @@ const SigninFormArea = () => {
                     >
                     <h2>{name}</h2>
                     <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
+                    <p>
+                        <i 
+                            class="fas fa-bell"
+                            style={{cursor:'pointer', fontSize:'20px'}}
+                        ></i>
+                        <i 
+                            class="far fa-comment"
+                            style={{cursor:'pointer', fontSize:'20px'}}
+                        ></i>
+                        <i 
+                            class="fas fa-cart-plus"
+                            style={{cursor:'pointer', fontSize:'20px'}}
+                        ></i>
+                    </p>
                     </span>
                     <button
                         style={{cursor: 'pointer', border: 'none', backgroundColor: 'transparent'}}

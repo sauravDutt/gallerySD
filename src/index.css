@@ -145,7 +145,6 @@ label input{
 .signinBtn {
   margin-left: 270px;
   max-width: 430px;
-  text-align: left;
   text-align: right;
 }
 .signinBtn h2, .signinBtn p{
@@ -159,6 +158,20 @@ label input{
 .signinBtn h2 {
   text-align: center;
   font-size: 2.3rem;
+}
+.welcomeUser {
+  display: none;
+  width: 100%;
+  height: 34vh;
+  background: rgba(255, 255, 255, 0.79);
+  margin-left: 270px;
+  max-width: 430px;
+}
+.welcomeUser h2 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: var(--error);
+  font-family: 'Quicksand', sans-serif;
 }
 /* progress bar styles */
 .progress-bar{

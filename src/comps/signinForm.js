@@ -10,6 +10,11 @@ const SigninFormArea = () => {
         document.getElementById('signinarea').style.display = 'none';
     }
 
+    const welcomeUser = () => {
+        document.getElementById('welcomeuserId').style.display = 'block';
+        document.getElementById('signinoptionId').style.display = 'none';
+    }
+
     const [name, setName] = useState('');
 
     const responseGoogle = (response) => {
@@ -27,7 +32,7 @@ const SigninFormArea = () => {
                 <i class="far fa-window-close"></i>
             </a>
             
-            <div className="signinOptions">
+            <div className="signinOptions" id="signinoptionId">
                 <div className="signinBtn">
                     <br />
                     <h2>Signin with Google</h2>
@@ -36,19 +41,19 @@ const SigninFormArea = () => {
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"
-                            onSuccess={responseGoogle}
+                            onSuccess={responseGoogle, welcomeUser}
                             onFailure={responseGoogle}
                             cookiePolicy={'single_host_origin'}
                         />
                 </div>
             </div>
-            {/* <div className='welcomeUser'>
+            <div className='welcomeUser' id="welcomeuserId">
                 <h2>{name}</h2>
                 <hr 
-                        style={{color:'#691e9b'}}
+                        style={{color:'#691e9b', width: '10px'}}
                     />
 
-            </div> */}
+            </div>
         </div>
     )
 }

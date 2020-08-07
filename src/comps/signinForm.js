@@ -40,6 +40,7 @@ const SigninFormArea = () => {
                     <span id="userInfo"
                             style={{display:'none'}}
                         >
+                            <br />
                         <h2>{name}</h2>
                         <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
                         <p>

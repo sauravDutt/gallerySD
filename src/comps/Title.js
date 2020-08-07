@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = () => {
   return (
-    <div className="title">
+    <div className="title" id="titleTop">
       <header className="header-main">
       <h1>Gallery | SD</h1>
         <a href="https://sauravdutt.tech/"><i class="fas fa-arrow-left" id="headerIcontwo"></i></a>

@@ -48,13 +48,6 @@ const SigninFormArea = () => {
                         />
                 </div>
             </div>
-            <div className='welcomeUser' id="welcomeuserId">
-                <h2>{name}</h2>
-                <hr 
-                        style={{color:'#691e9b', width: '10px'}}
-                    />
-
-            </div>
         </div>
     )
 }

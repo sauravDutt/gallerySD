@@ -11,7 +11,7 @@ const SigninFormArea = () => {
         document.getElementById('signinarea').style.display = 'none';
     }
 
-    cosnt [name, setName] = useState('');
+    const [name, setName] = useState('');
 
     const responseGoogle = (response) => {
         setName(response.profileObj.name);

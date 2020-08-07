@@ -1,6 +1,5 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
-import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 

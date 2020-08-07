@@ -33,7 +33,9 @@ const SigninFormArea = () => {
                     <h2>Signin with Google</h2>
                     <p>Signin with Google and become a part of the Community!!</p>
                     <h2>{name}</h2>
-                    <hr />
+                    <hr 
+                        style={{color:'#691e9b'}}
+                    />
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"

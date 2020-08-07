@@ -41,9 +41,10 @@ const SigninFormArea = () => {
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"
-                            onSuccess={responseGoogle, welcomeUser}
+                            onSuccess={responseGoogle}
                             onFailure={responseGoogle}
                             cookiePolicy={'single_host_origin'}
+                            onClick = {welcomeUser}
                         />
                 </div>
             </div>

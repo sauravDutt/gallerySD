@@ -5,7 +5,6 @@ import { useState } from 'react';
 
 const SigninFormArea = () => {
 
-    
     const closesigninForm = () => {
         document.getElementById('signinarea').style.display = 'none';
     }
@@ -33,34 +32,34 @@ const SigninFormArea = () => {
             
             <div className="signinOptions" id="signinoptionId">
                 <div className="signinBtn">
-                    <br />
                     <span id="initial">
-                    <h2>Signin with Google</h2>
-                    <p>Signin with Google and become a part of the Community!!</p>
+                        <br />
+                        <h2>Signin with Google</h2>
+                        <p>Signin with Google and become a part of the Community!!</p>
                     </span>
                     <span id="userInfo"
-                        style={{display:'none'}}
-                    >
-                    <h2>{name}</h2>
-                    <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
-                    <p>
-                        <i 
-                            class="fas fa-bell"
-                            style={{cursor:'pointer', fontSize:'20px', color:'#715086'}}
-                        ></i>
-                        <i 
-                            class="far fa-comment"
-                            style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
-                        ></i>
-                        <i 
-                            class="fas fa-cart-plus"
-                            style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
-                        ></i>
-                        <i 
-                            class="fas fa-sign-out-alt"
-                            style={{cursor:'pointer', fontSize:'20px', color:'#715086', float:'right', marginTop: '10px'}}
-                        ></i>
-                    </p>
+                            style={{display:'none'}}
+                        >
+                        <h2>{name}</h2>
+                        <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
+                        <p>
+                            <i 
+                                class="fas fa-bell"
+                                style={{cursor:'pointer', fontSize:'20px', color:'#715086'}}
+                            ></i>
+                            <i 
+                                class="far fa-comment"
+                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
+                            ></i>
+                            <i 
+                                class="fas fa-cart-plus"
+                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
+                            ></i>
+                            <i 
+                                class="fas fa-sign-out-alt"
+                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', float:'right', marginTop: '10px'}}
+                            ></i>
+                        </p>
                     </span>
                     <button
                         style={{cursor: 'pointer', border: 'none', backgroundColor: 'transparent'}}

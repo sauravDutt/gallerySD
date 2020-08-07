@@ -35,9 +35,14 @@ const SigninFormArea = () => {
             <div className="signinOptions" id="signinoptionId">
                 <div className="signinBtn">
                     <br />
+                    <span id="initial">
                     <h2>Signin with Google</h2>
                     <p>Signin with Google and become a part of the Community!!</p>
+                    </span>
+                    <span id="userInfo">
                     <h2>{name}</h2>
+                    <hr style={{color:'#691e9b', height:'15px'}}/>
+                    </span>
                         <GoogleLogin 
                             clientId={'1035086583509-rntbhhj3p6qdecj9ijek466i2adqk6r5.apps.googleusercontent.com'}
                             buttonText="Signin"

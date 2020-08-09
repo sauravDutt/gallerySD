@@ -161,6 +161,9 @@ label input{
   font-size: 2.3rem;
 }
 @media only screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
   .signinForm {
     background-size: cover;
     align-items: center;

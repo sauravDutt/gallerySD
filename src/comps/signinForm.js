@@ -15,8 +15,8 @@ const SigninFormArea = () => {
         document.getElementById('buttonSignin').style.display = 'none';
     }
 
-    const openNotifications = () => {
-        <Notification />
+    const showNotification = () => {
+        document.getElementById('notifications').style.display='block';
     }
 
     const welcomeUser = () => {
@@ -61,7 +61,7 @@ const SigninFormArea = () => {
                             <a 
                                 href={'#notificationsBtn'}
                                 style={{cursor:'pointer', textDecoration: 'none'}}
-                                onClick = {openNotifications}
+                                onClick={showNotification}
                             >
                                 <i 
                                     class="fas fa-bell"
@@ -112,6 +112,10 @@ const SigninFormArea = () => {
                     </button>
                 </div>
             </div>
+            <Notification 
+                id="notifications"
+                style={ { display:'none'}}
+            />
         </div>
     )
 }

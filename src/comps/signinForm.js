@@ -18,8 +18,7 @@ const SigninFormArea = () => {
     }
     const handleClick = () => {
         if (e.target.classList.contains('backdrop')) {
-            
-            setSelectedImg(null);
+            document.getElementById('notificationBackdrop').style.display = 'none';
         }
     }
     const welcomeUser = () => {

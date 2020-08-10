@@ -20,6 +20,7 @@ const SigninFormArea = () => {
         if (e.target.classList.contains('backdrop')) {
             
             setSelectedImg(null);
+        }
     }
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';

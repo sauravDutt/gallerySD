@@ -219,6 +219,9 @@ label input{
   .notificationDiv {
     width: 280px;
   }
+  .chatDiv{
+    width: 280px;
+  }
 }
 /* progress bar styles */
 .progress-bar{

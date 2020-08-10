@@ -160,7 +160,7 @@ label input{
   text-align: center;
   font-size: 2.3rem;
 }
-.backdrop-notification{
+.backdrop-dashboard{
   position: fixed;
   top: 0;
   left: 0;

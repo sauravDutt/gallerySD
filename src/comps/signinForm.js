@@ -13,11 +13,9 @@ const SigninFormArea = () => {
     const removeBtn = () => {
         document.getElementById('buttonSignin').style.display = 'none';
     }
-
     const showNotification = () => {
-        document.getElementById('notifications').style.display='block';
+        document.getElementById('notificationBackdrop').style.display = 'block';
     }
-
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
         document.getElementById('initial').style.display = 'none';   
@@ -111,25 +109,22 @@ const SigninFormArea = () => {
                     </button>
                 </div>
             </div>
-            <motion.div 
+            <div 
+                id = 'notificationBackdrop'
                 className="backdrop-notification" 
-                initial = {{opacity: 0}}
-                animate = {{ opacity: 1}}
             >
 
-            <motion.div 
-                className="notificationDiv" 
-                id='notificationsBtn'
-                initial = {{y:"-100vh"}}
-                animate = {{ y: 0}}
-            >
-                <h2><i 
-                        class="fas fa-bell"
-                        style={{color:'#715086'}}
-                    ></i> Notifications</h2>
-            </motion.div>
+                <div 
+                    className="notificationDiv" 
+                    id='notificationsBtn'
+                >
+                    <h2><i 
+                            class="fas fa-bell"
+                            style={{color:'#715086'}}
+                        ></i> Notifications</h2>
+                </div>
 
-        </motion.div>
+            </div>
         </div>
     )
 }

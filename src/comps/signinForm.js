@@ -16,6 +16,11 @@ const SigninFormArea = () => {
     const showNotification = () => {
         document.getElementById('notificationBackdrop').style.display = 'block';
     }
+    const handleClick = () => {
+        if (e.target.classList.contains('backdrop')) {
+            
+            setSelectedImg(null);
+    }
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
         document.getElementById('initial').style.display = 'none';   
@@ -112,6 +117,7 @@ const SigninFormArea = () => {
             <div 
                 id = 'notificationBackdrop'
                 className="backdrop-notification" 
+                onClick={handleClick}
             >
 
                 <div 

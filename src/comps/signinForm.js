@@ -16,10 +16,9 @@ const SigninFormArea = () => {
     const showNotification = () => {
         document.getElementById('notificationBackdrop').style.display = 'block';
     }
-    const handleClick = (e) => {
-        if (e.target.classList.contains('backdrop')) {
+    const closeNotification = () => {
             document.getElementById('notificationBackdrop').style.display = 'none';
-        }
+        
     }
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
@@ -124,6 +123,14 @@ const SigninFormArea = () => {
                     className="notificationDiv" 
                     id='notificationsBtn'
                 >
+                    <a 
+                        href={"#titleTop"}
+                        className={"closeBtn"}
+                        style={{cursor: 'pointer', float: 'right', fontSize: '25px', color:'#691e9b'}}
+                        onClick={closeNotification}
+                    >
+                        <i class="far fa-window-close"></i>
+                    </a>
                     <h2><i 
                             class="fas fa-bell"
                             style={{color:'#715086'}}

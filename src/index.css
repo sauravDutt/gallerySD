@@ -199,7 +199,6 @@ label input{
   text-align: center;
   background-color: #491e66;
   position: relative;
-  bottom: 0px;
   color: #fff;
 }
 @media only screen and (max-width: 400px) {

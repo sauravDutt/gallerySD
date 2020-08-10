@@ -130,7 +130,9 @@ const SigninFormArea = () => {
                     >
                         <i class="far fa-window-close"></i>
                     </a>
-                    <h2><i 
+                    <h2
+                        style={ { userSelect:'none', color: '#715086' }}
+                    ><i 
                             class="fas fa-bell"
                             style={{color:'#715086'}}
                         ></i> Notifications</h2>

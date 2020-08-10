@@ -16,7 +16,7 @@ const SigninFormArea = () => {
     const showNotification = () => {
         document.getElementById('notificationBackdrop').style.display = 'block';
     }
-    const handleClick = () => {
+    const handleClick = (e) => {
         if (e.target.classList.contains('backdrop')) {
             document.getElementById('notificationBackdrop').style.display = 'none';
         }

@@ -115,7 +115,7 @@ const SigninFormArea = () => {
             </div>
             <div 
                 id = 'notificationBackdrop'
-                className="backdrop-notification" 
+                className="backdrop-dashboard" 
             >
 
                 <div 

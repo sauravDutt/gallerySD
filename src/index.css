@@ -160,6 +160,13 @@ label input{
   text-align: center;
   font-size: 2.3rem;
 }
+.notificationDiv {
+  width: 500px;
+  border-radius: 25px;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 1px solid #562974;
+}
 @media only screen and (max-width: 400px) {
   body {
     overflow-x: hidden;
@@ -183,6 +190,9 @@ label input{
   }
   #initial br {
     display: none;
+  }
+  .notificationDiv {
+    width: 280px;
   }
 }
 /* progress bar styles */

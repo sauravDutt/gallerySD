@@ -5,6 +5,7 @@ import ImageGrid from './comps/imageGrid';
 import Modal from './comps/Modal';
 import Signin from './comps/signin';
 import SigninFormArea from './comps/signinForm';
+import Footer from './comps/footer';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <SigninFormArea />
       <ImageGrid setSelectedImg={setSelectedImg}/>
       { selectedImg && <Modal selectedImg = {selectedImg} setSelectedImg = {setSelectedImg}/> }
+      <Footer />
     </div>
   );
 }

@@ -170,6 +170,7 @@ label input{
 }
 .notificationDiv {
   width: 500px;
+  z-index: 199;
   background-color: #fff;
   border-radius: 25px;
   margin: 60px auto;

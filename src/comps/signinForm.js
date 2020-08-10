@@ -52,22 +52,42 @@ const SigninFormArea = () => {
                         <h2>{name}</h2>
                         <hr style={{backgroundColor:'#9f70be9f', height:'5px', borderRadius:'20px'}}/>
                         <p>
-                            <i 
-                                class="fas fa-bell"
-                                style={{cursor:'pointer', fontSize:'20px', color:'#715086'}}
-                            ></i>
-                            <i 
-                                class="far fa-comment"
-                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
-                            ></i>
-                            <i 
-                                class="fas fa-cart-plus"
-                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
-                            ></i>
-                            <i 
-                                class="fas fa-sign-out-alt"
-                                style={{cursor:'pointer', fontSize:'20px', color:'#715086', float:'right', marginTop: '10px'}}
-                            ></i>
+                            <a 
+                                href={'#notificationsBtn'}
+                                style={{cursor:'pointer', textDecoration: 'none'}}
+                            >
+                                <i 
+                                    class="fas fa-bell"
+                                    style={{cursor:'pointer', fontSize:'20px', color:'#715086'}}
+                                ></i>
+                            </a>
+                            <a 
+                                href={'#chatBtn'}
+                                style={{cursor:'pointer', textDecoration: 'none'}}
+                            >
+                                <i 
+                                    class="far fa-comment"
+                                    style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
+                                ></i>
+                            </a>
+                            <a 
+                                href={'#postimgBtn'}
+                                style={{cursor:'pointer', textDecoration: 'none'}}
+                            >
+                                <i 
+                                    class="fas fa-cart-plus"
+                                    style={{cursor:'pointer', fontSize:'20px', color:'#715086', marginLeft:'10px'}}
+                                ></i>
+                            </a>
+                            <a
+                                href={'#signoutMainBtn'}
+                                style={{cursor:'pointer', textDecoration: 'none'}}
+                            >
+                                <i 
+                                    class="fas fa-sign-out-alt"
+                                    style={{cursor:'pointer', fontSize:'20px', color:'#715086', float:'right', marginTop: '10px'}}
+                                ></i>
+                            </a>
                         </p>
                     </span>
                     <button

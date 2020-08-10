@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "sys": { "id": "1" },
+      "fields": {
+        "title": "Wiz Khalifa",
+        "discription": "Cameron Jibril Thomaz, better known by his stage name Wiz Khalifa, is an American rapper, singer, songwriter, and actor. He released his debut album, Show and Prove, in 2006, and signed to Warner Bros. Records in 2007.",
+        "price": 520,
+        "image": { "fields": { "file": { "url": "./images/product-1.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "2" },
+      "fields": {
+        "title": "once upon a time in hollywood",
+        "discription": "Rick, a washed-out actor, and Cliff, his stunt double, struggle to recapture fame and success in 1960s Los Angeles. Meanwhile, living next door to Rick is Sharon Tate and her husband Roman Polanski. Once Upon a Time in Hollywood is a comedy-drama film written and directed by Quentin Tarantino. Released in 2019.",
+        "price": 450,
+        "image": { "fields": { "file": { "url": "./images/product-2.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "3" },
+      "fields": {
+        "title": "trailer park boys",
+        "discription":"Nova Scotia's trailer parks are colorful thanks to residents Ricky, Bubbles and Julian. Together, they plan mad capers, usually get-rich-quick schemes, with plenty of screw-ups along the way. They're constantly being hunted by their former trailer park supervisor, Jim Lahey, and his perpetually shirtless, pot-belled assistant, Randy.",
+        "price": 500,
+        "image": { "fields": { "file": { "url": "./images/product-3.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "4" },
+      "fields": {
+        "title": "dark knight rises",
+        "discription":"Bane, an imposing terrorist, attacks Gotham City and disrupts its eight-year-long period of peace. This forces Bruce Wayne to come out of hiding and don the cape and cowl of Batman again. The Dark Knight Rises is a 2012 superhero film directed by Christopher Nolan, who co-wrote the screenplay with his brother Jonathan Nolan, and the story with David S. Goyer. Based on the DC Comics character Batman, it is the final installment in Nolan's The Dark Knight Trilogy.",
+        "price": 900,
+        "image": { "fields": { "file": { "url": "./images/product-4.png" } } }
+      }
+    },
+    {
+      "sys": { "id": "5" },
+      "fields": {
+        "title": "shazam!",
+        "discription":"Shazam, is a fictional superhero appearing in American comics originally published by Fawcett Comics, and currently published by DC Comics. Artist C. C. Beck and writer Bill Parker created the character in 1939. Captain Marvel first appeared in Whiz Comics #2 (cover-dated Feb. 1940), published by Fawcett Comics. He is the alter ego of Billy Batson, a boy who, by speaking the magic word 'SHAZAM!'.",
+        "price": 450,
+        "image": { "fields": { "file": { "url": "./images/product-5.png" } } }
+      }
+    }
+  ]
+}

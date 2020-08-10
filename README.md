@@ -2,6 +2,9 @@
 
 ![](src/image.png)
 
+Gallery | SD, is a full-stack React Application, a platform where small artists, illustrators, graphic designers can share there work, and make some money, It's a 
+work in progress. Honestly its just a project for my portfolio website.
+
 
 ## Available Scripts
 

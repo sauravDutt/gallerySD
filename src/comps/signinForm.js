@@ -116,7 +116,6 @@ const SigninFormArea = () => {
             <div 
                 id = 'notificationBackdrop'
                 className="backdrop-notification" 
-                onClick={handleClick}
             >
 
                 <div 

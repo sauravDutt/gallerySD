@@ -125,7 +125,7 @@ const SigninFormArea = () => {
                     <a 
                         href={"#titleTop"}
                         className={"closeBtn"}
-                        style={{cursor: 'pointer', float: 'right', fontSize: '25px', color:'#691e9b'}}
+                        style={{cursor: 'pointer', float: 'right',marginRight:'20px', fontSize: '25px', color:'#691e9b'}}
                         onClick={closeNotification}
                     >
                         <i class="far fa-window-close"></i>

@@ -177,7 +177,19 @@ label input{
   box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
   border: 1px solid #562974;
 }
+.chatDiv{
+  width: 500px;
+  z-index: 199;
+  background-color: #fff;
+  border-radius: 25px;
+  margin: 60px auto;
+  box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+  border: 1px solid #562974;
+}
 #notificationBackdrop {
+  display: none;
+}
+#chatBackdrop {
   display: none;
 }
 @media only screen and (max-width: 400px) {

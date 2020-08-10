@@ -16,9 +16,14 @@ const SigninFormArea = () => {
     const showNotification = () => {
         document.getElementById('notificationBackdrop').style.display = 'block';
     }
+    const showChat = () => {
+        document.getElementById('chatBackdrop').style.display = 'block';
+    }
     const closeNotification = () => {
             document.getElementById('notificationBackdrop').style.display = 'none';
-        
+    }
+    const closeChat = () => {
+        document.getElementById('chatBackdrop').style.display = 'none';
     }
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
@@ -72,6 +77,7 @@ const SigninFormArea = () => {
                             <a 
                                 href={'#chatBtn'}
                                 style={{cursor:'pointer', textDecoration: 'none'}}
+                                onClick={showChat}
                             >
                                 <i 
                                     class="far fa-comment"
@@ -120,7 +126,7 @@ const SigninFormArea = () => {
 
                 <div 
                     className="notificationDiv" 
-                    id='notificationsBtn'
+                    id='chatBtn'
                 >
                     <a 
                         href={"#titleTop"}
@@ -136,6 +142,32 @@ const SigninFormArea = () => {
                             class="fas fa-bell"
                             style={{color:'#715086'}}
                         ></i> Notifications</h2>
+                </div>
+
+            </div>
+            <div 
+                id = 'chatBackdrop'
+                className="backdrop-dashboard" 
+            >
+
+                <div 
+                    className="chatDiv" 
+                    id='notificationsBtn'
+                >
+                    <a 
+                        href={"#titleTop"}
+                        className={"closeBtn"}
+                        style={{cursor: 'pointer', float: 'right',marginRight:'20px', fontSize: '25px', color:'#691e9b'}}
+                        onClick={closeChat}
+                    >
+                        <i class="far fa-window-close"></i>
+                    </a>
+                    <h2
+                        style={ { userSelect:'none', color: '#715086' }}
+                    ><i 
+                            class="far fa-comment"
+                            style={{color:'#715086'}}
+                        ></i> Chat</h2>
                 </div>
 
             </div>

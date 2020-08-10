@@ -1,7 +1,7 @@
 import React from 'react';
 import GoogleLogin from 'react-google-login';
 import { useState } from 'react';
-import Notification from '/notifications';
+import Notification from './notifications';
 
 
 

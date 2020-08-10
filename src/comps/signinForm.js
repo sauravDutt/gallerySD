@@ -16,9 +16,7 @@ const SigninFormArea = () => {
     }
 
     const openNotifications = () => {
-        return (
-            <Notification />
-        )
+        <Notification />
     }
 
     const welcomeUser = () => {

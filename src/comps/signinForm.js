@@ -38,6 +38,10 @@ const SigninFormArea = () => {
             removeBtn();
         }
     }
+    const signout = () => {
+        document.getElementById('userInfo').style.display = 'none';
+        document.getElementById('initial').style.display = 'block';   
+    }
     
     const [name, setName] = useState('');
 
@@ -103,6 +107,7 @@ const SigninFormArea = () => {
                             <a
                                 href={'#signoutMainBtn'}
                                 style={{cursor:'pointer', textDecoration: 'none'}}
+                                onClick={signout}
                             >
                                 <i 
                                     class="fas fa-sign-out-alt"

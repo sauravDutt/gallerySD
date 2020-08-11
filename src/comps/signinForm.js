@@ -19,11 +19,17 @@ const SigninFormArea = () => {
     const showChat = () => {
         document.getElementById('chatBackdrop').style.display = 'block';
     }
+    const showPost = () => {
+        document.getElementById('postBackdrop').style.display = 'block';
+    }
     const closeNotification = () => {
             document.getElementById('notificationBackdrop').style.display = 'none';
     }
     const closeChat = () => {
         document.getElementById('chatBackdrop').style.display = 'none';
+    }
+    const closePost = () => {
+        document.getElementById('postBackdrop').style.display = 'none';
     }
     const welcomeUser = () => {
         document.getElementById('userInfo').style.display = 'block';
@@ -87,6 +93,7 @@ const SigninFormArea = () => {
                             <a 
                                 href={'#postimgBtn'}
                                 style={{cursor:'pointer', textDecoration: 'none'}}
+                                onClick={showPost}
                             >
                                 <i 
                                     class="fas fa-cart-plus"
@@ -142,6 +149,7 @@ const SigninFormArea = () => {
                             class="fas fa-bell"
                             style={{color:'#715086'}}
                         ></i> Notifications</h2>
+                        <p>There are no notifications.</p>
                 </div>
 
             </div>
@@ -152,7 +160,7 @@ const SigninFormArea = () => {
 
                 <div 
                     className="chatDiv" 
-                    id='notificationsBtn'
+                    id='chatBtn'
                 >
                     <a 
                         href={"#titleTop"}
@@ -168,6 +176,32 @@ const SigninFormArea = () => {
                             class="far fa-comment"
                             style={{color:'#715086'}}
                         ></i> Chat</h2>
+                </div>
+
+            </div>
+            <div 
+                id = 'postBackdrop'
+                className="backdrop-dashboard" 
+            >
+
+                <div 
+                    className="postDiv" 
+                    id='postimgBtn'
+                >
+                    <a 
+                        href={"#titleTop"}
+                        className={"closeBtn"}
+                        style={{cursor: 'pointer', float: 'right',marginRight:'20px', fontSize: '25px', color:'#691e9b'}}
+                        onClick={closePost}
+                    >
+                        <i class="far fa-window-close"></i>
+                    </a>
+                    <h2
+                        style={ { userSelect:'none', color: '#715086' }}
+                    ><i 
+                        class="fas fa-cart-plus"
+                            style={{color:'#715086'}}
+                        ></i> Post Art</h2>
                 </div>
 
             </div>

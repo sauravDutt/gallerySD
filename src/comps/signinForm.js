@@ -41,6 +41,7 @@ const SigninFormArea = () => {
     const signout = () => {
         document.getElementById('userInfo').style.display = 'none';
         document.getElementById('initial').style.display = 'block';   
+        document.getElementById('buttonSignin').style.display = 'block';
     }
     
     const [name, setName] = useState('');

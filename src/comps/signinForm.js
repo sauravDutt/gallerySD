@@ -42,6 +42,7 @@ const SigninFormArea = () => {
         document.getElementById('userInfo').style.display = 'none';
         document.getElementById('initial').style.display = 'block';   
         document.getElementById('buttonSignin').style.display = 'block';
+        document.getElementById('buttonSignin').style.float = 'right';
     }
     
     const [name, setName] = useState('');

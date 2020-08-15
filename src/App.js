@@ -4,23 +4,23 @@ import UploadForm from './comps/uploadForm';
 import ImageGrid from './comps/imageGrid';
 import Modal from './comps/Modal';
 import Signin from './comps/signin';
-import SigninFormArea from './comps/signinForm';
 import Footer from './comps/footer';
+import Info from './comps/InfoModal';
 
 function App() {
 
   const [selectedImg, setSelectedImg] = useState(null);
-  
+  const [showInfo, setShowInfo] = useState(null)
 
   return (
     <div className="App">
       <Title />
-      <Signin />
+      <Signin setShowInfo = {setShowInfo}/>
       <UploadForm />
-      <SigninFormArea />
       <ImageGrid setSelectedImg={setSelectedImg}/>
       { selectedImg && <Modal selectedImg = {selectedImg} setSelectedImg = {setSelectedImg}/> }
       <Footer />
+      {showInfo && <Info setShowInfo = {setShowInfo}/>}
     </div>
   );
 }

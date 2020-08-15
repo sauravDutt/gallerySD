@@ -1,18 +1,18 @@
 import React from 'react';
 
-const Signin = () => {
+const Signin = ({setShowInfo}) => {
 
-    const showSigninArea = () => {
-            document.getElementById('signinarea').style.display='block';
+    const handleClick = () => {
+        setShowInfo(1);
     }
 
     return (
         <form>
-            <label className = "signin" id="signinID">
-                <i class="far fa-user-circle"></i>
+            <label className = "signin">
+                <i class="fas fa-info-circle"></i>
                 <input 
                     type="button"
-                    onClick={showSigninArea}
+                    onClick={handleClick}
                 />
             </label>
         </form>

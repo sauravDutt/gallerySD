@@ -160,6 +160,9 @@ label input{
   body {
     overflow-x: hidden;
   }
+  .App {
+    overflow-x: hidden;
+  }
   .signinForm {
     background-size: cover;
     align-items: center;
